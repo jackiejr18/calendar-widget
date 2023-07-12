@@ -9,7 +9,10 @@
 @font-face {
 	font-family: 'WeatherIcons';
 	src: url('https://cdnjs.cloudflare.com/ajax/libs/weather-icons/1.2/fonts/weathericons-regular-webfont.eot');
-	src: url('https://cdnjs.cloudflare.com/ajax/libs/weather-icons/1.2/fonts/weathericons-regular-webfont.eot?#iefix')format('embedded-opentype'),url('https://cdnjs.cloudflare.com/ajax/libs/weather-icons/1.2/fonts/weathericons-regular-webfont.woff')format('woff'), url('https://cdnjs.cloudflare.com/ajax/libs/weather-icons/1.2/fonts/weathericons-regular-webfont.ttf') format('truetype'), url('https://cdnjs.cloudflare.com/ajax/libs/weather-icons/1.2/fonts/weathericons-regular-webfont.svg#weathericons')format('svg');
+	src: url('https://cdnjs.cloudflare.com/ajax/libs/weather-icons/1.2/fonts/weathericons-regular-webfont.eot?#iefix')format('embedded-opentype'),
+		url('https://cdnjs.cloudflare.com/ajax/libs/weather-icons/1.2/fonts/weathericons-regular-webfont.woff')format('woff'), 
+		url('https://cdnjs.cloudflare.com/ajax/libs/weather-icons/1.2/fonts/weathericons-regular-webfont.ttf') format('truetype'), 
+		url('https://cdnjs.cloudflare.com/ajax/libs/weather-icons/1.2/fonts/weathericons-regular-webfont.svg#weathericons')format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -17,4 +20,15 @@
 body {
 	background: #ecf0f1;
 	font-family: 'Sonic Advanced 2';
+}
+
+.calendar-object {
+	width: 200px;
+	height: 200px;
+	background: rgb(106, 200, 193);
+	background: -moz-linear-gradient(30deg, rgb(106, 200, 193) 0%, rgb(160, 208, 125) 100%);
+	background: -webkit-linear-gradient(30deg, rgb(106, 200, 193) 0%, rgb(160, 208, 125) 100%);
+	background: -o-linear-gradient(30deg, rgb(106, 200, 193) 0%, rgb(160, 208, 125) 100%);
+	background: -ms-linear-gradient(30deg, rgb(106, 200, 193) 0%, rgb(160, 208, 125) 100%);
+	background: linear-gradient(120deg, rgb(106, 200, 193) 0%, rgb(160, 208, 125) 100%);
 }
