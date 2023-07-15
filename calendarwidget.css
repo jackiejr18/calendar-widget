@@ -1,34 +1,118 @@
 @font-face {
 	font-family: 'Sonic Advanced 2';
-	src: url(Sonic Advanced 2.ttf) format('truetype');
+	src: url(fonts/Sonic Advanced 2.ttf) format('truetype');
 	font-weight: normal;
 	font-style: normal;
 }
 
-// Weather Icons Import
 @font-face {
-	font-family: 'WeatherIcons';
-	src: url('https://cdnjs.cloudflare.com/ajax/libs/weather-icons/1.2/fonts/weathericons-regular-webfont.eot');
-	src: url('https://cdnjs.cloudflare.com/ajax/libs/weather-icons/1.2/fonts/weathericons-regular-webfont.eot?#iefix')format('embedded-opentype'),
-		url('https://cdnjs.cloudflare.com/ajax/libs/weather-icons/1.2/fonts/weathericons-regular-webfont.woff')format('woff'), 
-		url('https://cdnjs.cloudflare.com/ajax/libs/weather-icons/1.2/fonts/weathericons-regular-webfont.ttf') format('truetype'), 
-		url('https://cdnjs.cloudflare.com/ajax/libs/weather-icons/1.2/fonts/weathericons-regular-webfont.svg#weathericons')format('svg');
-	font-weight: normal;
-	font-style: normal;
+    font-family: 'WeatherIcons';
+    src: url('https://cdnjs.cloudflare.com/ajax/libs/weather-icons/1.2/fonts/weathericons-regular-webfont.eot');
+    src: url('https://cdnjs.cloudflare.com/ajax/libs/weather-icons/1.2/fonts/weathericons-regular-webfont.eot?#iefix') format('embedded-opentype'), url('https://cdnjs.cloudflare.com/ajax/libs/weather-icons/1.2/fonts/weathericons-regular-webfont.woff') format('woff'), url('https://cdnjs.cloudflare.com/ajax/libs/weather-icons/1.2/fonts/weathericons-regular-webfont.ttf') format('truetype'), url('https://cdnjs.cloudflare.com/ajax/libs/weather-icons/1.2/fonts/weathericons-regular-webfont.svg#weathericons') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
 
 body {
-	background: #ecf0f1;
-	font-family: 'Sonic Advanced 2';
+    background: #ecf0f1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
 }
 
 .calendar-object {
-	width: 200px;
-	height: 200px;
-	background: rgb(106, 200, 193);
-	background: -moz-linear-gradient(30deg, rgb(106, 200, 193) 0%, rgb(160, 208, 125) 100%);
-	background: -webkit-linear-gradient(30deg, rgb(106, 200, 193) 0%, rgb(160, 208, 125) 100%);
-	background: -o-linear-gradient(30deg, rgb(106, 200, 193) 0%, rgb(160, 208, 125) 100%);
-	background: -ms-linear-gradient(30deg, rgb(106, 200, 193) 0%, rgb(160, 208, 125) 100%);
-	background: linear-gradient(120deg, rgb(106, 200, 193) 0%, rgb(160, 208, 125) 100%);
+    width: 200px;
+    height: 200px;
+    background: rgb(106, 200, 193);
+    background: -moz-linear-gradient(30deg, rgb(106, 200, 193) 0%, rgb(160, 208, 125) 100%);
+    background: -webkit-linear-gradient(30deg, rgb(106, 200, 193) 0%, rgb(160, 208, 125) 100%);
+    background: -o-linear-gradient(30deg, rgb(106, 200, 193) 0%, rgb(160, 208, 125) 100%);
+    background: -ms-linear-gradient(30deg, rgb(106, 200, 193) 0%, rgb(160, 208, 125) 100%);
+    background: linear-gradient(120deg, rgb(106, 200, 193) 0%, rgb(160, 208, 125) 100%);
+    color: #fff;
+    padding: 15px;
+    font-family: 'Sonic Advanced 2';
+    margin: 40px auto;
+    position: relative;
+}
+
+.calendar-object .date #date {
+    font-weight: 400;
+    font-size: 116px;
+    position: relative;
+    top: 3px;
+    left: 85px;
+    color: #7cbf93;
+}
+
+.calendar-object .date #day {
+    text-transform: uppercase;
+    position: relative;
+    top: -140px;
+    left: 0px;
+    font-weight: 700;
+    font-size: 28px;
+    display: block;
+}
+
+.calendar-object .date #time {
+    font-weight: 300;
+    position: relative;
+    top: -140px;
+    left: 0px;
+    font-size: 22px;
+    width: 100%;
+    display: block;
+}
+
+.calendar-object .weather {
+    position: relative;
+    width: 100%;
+    top: -108px;
+    left: 3px;
+    display: block;
+}
+
+.calendar-object .weather .icons {
+    font-family: 'WeatherIcons';
+    font-size: 18px;
+    margin-right: 5px;
+    width: 26px;
+    display: inline-block;
+    text-align: center;
+}
+
+.calendar-object .weather #temp {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.calendar-object .weather #desc {
+    font-size: 14px;
+}
+
+.calendar-object .weather #humidity {
+    font-size: 14px;
+}
+
+.calendar-object #details {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    left: 5px;
+    border-top: #fff 1px dotted;
+    padding: 4px 5px 0 5px;
+    font-size: 12px;
+    line-height: 12px;
+    color: #fff;
+}
+
+.calendar-object #details #year {
+    float: right;
+}
+
+.calendar-object #details #country {
+    float: left;
 }
