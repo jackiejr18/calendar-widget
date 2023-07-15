@@ -8,7 +8,16 @@ $(document).ready(function) {
 		unit: 'c',
 		success: function(weather) {
 
-			$()
+			$('#country').text(weather.city + ',' + weather.country); //set text content of element with country id to combo of weather.city and weather.country
+			$('#temp').text(weather.temp+'°');
+			$('#desc').text(weather.currently);
+			$('#humidity').text(weather.humidity+'%');
+
+			// a switch statement that switches parsed integer value of weather.code and assigns it to icon variable 
+			var icon;
+			switch (parseInt(weather.code)){
+
+			}
 		}
 	})
 }
