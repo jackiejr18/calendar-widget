@@ -179,7 +179,31 @@ $(document).ready(function) {
 
       	case 40: // Scattered snow showers
       		icon = '&#xf01b;';
-      		break;    
+      		break;
+
+      	case 41: // Heavy snow
+      		icon = '&#xf01b;';
+      		break;
+
+      	case 42: // Partly cloudy
+      		icon = '&#xf013;';
+      		break; 
+
+      	case 43: // Thundershowers
+      		icon = '&#xf01e;';
+      		break;  
+
+      	case 44: // Snow showers
+      		icon = '&#xf01b;';
+      		break;
+
+      	case 45: // Isolated Thundershowers
+      		icon = '&#xf01e;';
+      		break;
+
+      	case 3200: // Not available
+      		icon = '?';
+      		break;   
 			}
 		}
 	})
